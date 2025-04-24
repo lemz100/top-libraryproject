@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="page-title">Book Library</h1>
+    <h2 id="table-header">List of books: </h2>
+    <table>
+        <thead>
+            <th>Book</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read?</th>
+        </thead>
+        <tbody>
+    </table>
+    <button id="add-book">New Book</button>
+    <dialog>
+        <button id="close-dialog">X</button>
+        <h3>Enter book details: </h3>
+        <form class="add-book-form" method="dialog">
+            <div class="formCell">
+            <label for="book-title">Book Title:</label>
+            <input type="text" name="bookTitle" id="book-title">
+            </div>
+            <div class="formCell">
+            <label for="book-author">Book Author:</label>
+            <input type="text" name="bookAuthor" id="book-author">
+            </div>
+            <div class="formCell">
+            <label for="book-pages">Pages:</label>
+            <input type="number" name="bookPages" id="book-pages">
+            </div>
+            <div class="formCell">
+            <label for="read-status">Have you read it?</label>
+            <select name="readStatus" id="read-status">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            </div>
+            <button type="submit" id="add-book-btn">Add Book</button>
+        </form>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>
